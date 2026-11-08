@@ -3,518 +3,183 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+  <meta name="description" content="SingleGS is a consumer-grade monocular 3D telepresence system with real-time 3D Gaussian rendering for glasses-free 3D displays.">
+  <meta name="keywords" content="3D telepresence, 3D Gaussian Splatting, monocular reconstruction, novel view synthesis, glasses-free 3D display">
+  <meta name="author" content="Xuling Huang, Tao Lin, Rui Zhao, Yuan Zhang, Li Fang, Jinyao Yan">
+  <meta property="og:title" content="SingleGS: Consumer-Grade Monocular 3D Telepresence with Real-Time 3D Gaussian Rendering">
+  <meta property="og:description" content="High-fidelity monocular 3D telepresence on consumer-grade devices.">
+  <meta property="og:type" content="website">
+  <title>SingleGS: Consumer-Grade Monocular 3D Telepresence</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Source+Serif+4:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    :root { --ink:#14211e; --muted:#5f6d68; --accent:#087c61; --soft:#eff8f4; --line:#dfe9e4; }
+    html { scroll-behavior:smooth; }
+    body { color:var(--ink); font-family:Inter,Arial,sans-serif; }
+    .hero { padding:2.25rem 1.5rem 1.25rem; }
+    .publication-title { font-size:clamp(2rem,4vw,3.15rem)!important; line-height:1.12; letter-spacing:-.045em; max-width:1100px; margin:0 auto 1rem!important; }
+    .publication-authors { line-height:1.75; color:#35423d; }
+    .publication-authors a { color:var(--ink); text-decoration:none; }
+    .publication-authors a:hover { color:var(--accent); }
+    .venue { color:var(--accent); font-weight:700; margin-top:.35rem; }
+    .publication-links { margin-top:1.45rem; display:flex; flex-wrap:wrap; justify-content:center; gap:.55rem; }
+    .publication-links .button { border:1px solid #243a32; background:#1c332b; font-weight:600; }
+    .publication-links .button:hover { background:var(--accent); border-color:var(--accent); }
+    .section { padding:3.5rem 1.5rem; }
+    .section-title { font-size:1.85rem; font-weight:800; letter-spacing:-.03em; margin-bottom:1.15rem; text-align:center; }
+    .lead { color:var(--muted); text-align:center; max-width:760px; margin:-.55rem auto 1.8rem; line-height:1.7; }
+    .teaser-shell { max-width:1080px; margin:0 auto; }
+    .teaser-video { display:block; width:100%; border-radius:14px; background:#10211b; box-shadow:0 8px 22px rgba(20,33,30,.12); }
+    .placeholder { border:2px dashed #8cb8a9; background:linear-gradient(135deg,#f5fbf8,#e7f4ee); border-radius:14px; min-height:250px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:2rem; color:#477364; }
+    .placeholder i { font-size:2rem; color:var(--accent); margin-bottom:.65rem; }
+    .placeholder strong { color:#1d5545; font-size:1.08rem; }
+    .placeholder code { margin-top:.65rem; color:#2a6755; background:#d8ede4; border-radius:5px; padding:.22rem .45rem; word-break:break-all; }
+    .teaser-placeholder { min-height:420px; }
+    .caption { font-size:.94rem; color:var(--muted); text-align:center; margin:1rem auto 0; line-height:1.6; }
+    .abstract { font-family:'Source Serif 4',Georgia,serif; font-size:1.16rem; line-height:1.78; }
+    .soft { background:var(--soft); }
+    .contribution { height:100%; padding:1.35rem 1.25rem; border:1px solid var(--line); border-radius:12px; background:white; }
+    .contribution .number { font-weight:800; color:var(--accent); font-size:1.25rem; }
+    .contribution h3 { font-size:1.08rem; font-weight:750; margin:.4rem 0 .45rem; }
+    .contribution p { color:var(--muted); line-height:1.65; font-size:.94rem; }
+    .pipeline-placeholder { min-height:380px; }
+    .method-figure { margin:1.8rem 0 0; }
+    .method-figure img { display:block; width:100%; }
+    .setup-figure { margin:1.8rem 0 0; }
+    .setup-figure .placeholder { min-height:360px; }
+    .result-stack { display:grid; gap:1.5rem; }
+    .result-card { position:relative; border:1px solid var(--line); border-radius:14px; background:#fff; overflow:visible; box-shadow:0 6px 18px rgba(20,33,30,.07); transition:transform .25s ease,box-shadow .25s ease; }
+    .result-card:hover { transform:translateY(-8px) scale(1.025); box-shadow:0 18px 34px rgba(20,33,30,.16); z-index:1; }
+    .result-card img { display:block; width:100%; border-radius:13px; }
+    .result-badge { position:absolute; z-index:2; top:1rem; left:1rem; display:inline-flex; align-items:center; gap:.4rem; padding:.45rem .72rem; border-radius:7px; color:#fff; font-weight:700; font-size:.88rem; box-shadow:0 4px 10px rgba(20,33,30,.22); transition:transform .25s ease,box-shadow .25s ease; }
+    .result-card:hover .result-badge { transform:translate(-.2rem,-.2rem) scale(1.08); box-shadow:0 8px 16px rgba(20,33,30,.3); }
+    .quality-badge { background:#4f7ee8; }
+    .latency-badge { background:#e65b55; }
+    .setup-badge { background:#8b5cf6; }
+    .metric { padding:1.15rem .8rem; text-align:center; border-right:1px solid var(--line); }
+    .metric:last-child { border:0; }
+    .metric .value { font-size:1.7rem; font-weight:800; color:var(--accent); letter-spacing:-.04em; }
+    .metric .label { color:var(--muted); font-size:.85rem; margin-top:.15rem; }
+    .video-card { height:100%; }
+    .video-card .placeholder { min-height:190px; border-radius:10px 10px 0 0; }
+    .video-caption { padding:.9rem 1rem 1rem; border:1px solid var(--line); border-top:0; border-radius:0 0 10px 10px; color:var(--muted); font-size:.92rem; }
+    .system-list { max-width:850px; margin:1.25rem auto 0; }
+    .system-list li { margin-bottom:.85rem; color:#3f504a; line-height:1.65; }
+    pre { white-space:pre-wrap; background:#10211b; color:#e6f4ee; border-radius:10px; padding:1.2rem; font-size:.85rem; }
+    footer { border-top:1px solid var(--line); color:#71807a; font-size:.84rem; padding:2rem 1.5rem 2.5rem; text-align:center; }
+    .nav-mini { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; font-size:.87rem; margin-top:1.35rem; }
+    .nav-mini a { color:var(--muted); text-decoration:none; } .nav-mini a:hover { color:var(--accent); }
+    @media (max-width:768px){ .teaser-placeholder{min-height:280px}.metric{border-right:0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.section{padding:2.7rem 1.25rem} }
+  </style>
 </head>
 <body>
-
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <main id="main-content">
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title publication-title">SingleGS: Consumer-Grade Monocular 3D Telepresence with Real-Time 3D Gaussian Rendering</h1>
+        <div class="is-size-5 publication-authors">
+          <span class="author-block">Xuling Huang<sup>1</sup></span>,
+          <span class="author-block">Tao Lin<sup>1</sup></span>,
+          <span class="author-block">Rui Zhao<sup>2</sup></span>,
+          <span class="author-block">Yuan Zhang<sup>1</sup></span>,
+          <span class="author-block">Li Fang<sup>1</sup></span>,
+          <span class="author-block">Jinyao Yan<sup>1</sup></span>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+        <div class="is-size-6 publication-authors mt-2">
+          Communication University of China<sup>1</sup> &nbsp; · &nbsp; Nanyang Technological University<sup>2</sup>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+        <p class="venue">ACM Multimedia 2026</p>
+        <div class="publication-links">
+          <a class="button is-dark is-rounded" href="#teaser"><span class="icon"><i class="fas fa-globe"></i></span><span>Page</span></a>
+          <a class="button is-dark is-rounded" href="https://doi.org/10.1145/3767308.3836177" target="_blank" rel="noopener"><span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span></a>
+          <a class="button is-dark is-rounded" href="#bibtex"><span class="icon"><i class="fas fa-quote-right"></i></span><span>BibTeX</span></a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+        <nav class="nav-mini" aria-label="Page sections">
+          <a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#results">Results</a>
+        </nav>
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
+  <section id="teaser" class="section pt-3">
+    <div class="teaser-shell">
+      <video class="teaser-video" controls autoplay muted loop playsinline preload="metadata" aria-label="SingleGS teaser video">
+        <source src="static/videos/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+
+  <section id="abstract" class="section soft">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">Abstract</h2>
+      <div class="content abstract">
+        <p>Immersive 3D telepresence promises a transformative paradigm for remote interaction, enabling participants to perceive a compelling sense of shared physical presence. However, existing systems rely on costly multi-view capture hardware, which limits their widespread adoption. We present <strong>SingleGS</strong>, an end-to-end high-fidelity monocular 3D telepresence system built entirely on consumer-grade devices. The system comprises a monocular RGB camera, an edge server for 3D reconstruction and rendering, and a glasses-free 3D tablet with view tracking. To reconstruct photorealistic humans from ambiguous monocular input under strict latency constraints, SingleGS infers a 3D Gaussian representation directly from each RGB frame through geometry initialization and Gaussian attribute estimation. Experiments show state-of-the-art visual quality, especially at close-range views, while the complete prototype maintains at least <strong>28 FPS</strong> with approximately <strong>90 ms</strong> end-to-end latency.</p>
+      </div>
+    </div>
+  </section>
 
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+  <section id="method" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">Method</h2>
+      <figure class="method-figure">
+        <img src="static/images/system.png" alt="SingleGS system pipeline: monocular capture, edge-server reconstruction, and 3D display" loading="lazy">
+      </figure>
+      <p class="caption">The SingleGS system consists of three main components: a sender, an edge server, and a glass-free 3D display. The sender performs monocular RGB capture and transmits the preprocessed frames to the server through a WebRTC channel. The edge server performs the frame-wise reconstruction, including geometry initialization, Gaussian attribute estimation, and novel-view rendering using a 3DGS rasterizer. Based on real-time view-tracking, the rendered stereo image pair is streamed to the 3D display. Then, the corresponding stereo content is presented, enabling autostereoscopic 3D visualization.</p>
+    </div>
+  </section>
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+  <section id="results" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">Results</h2>
+      <figure class="setup-figure result-card">
+        <span class="result-badge setup-badge">Setup</span>
+        <img src="static/images/setup.png" alt="SingleGS hardware setup" loading="lazy">
+      </figure>
+      <div class="columns is-variable is-5 mt-5">
+        <div class="column is-6">
+          <div class="result-stack">
+            <figure class="result-card">
+              <span class="result-badge quality-badge">Quality</span>
+              <img src="static/images/novel.png" alt="Novel-view quality comparison results" loading="lazy">
+            </figure>
+            <figure class="result-card">
+              <span class="result-badge quality-badge">Quality</span>
+              <img src="static/images/quality.png" alt="Quality comparison results" loading="lazy">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-6">
+          <figure class="result-card">
+            <span class="result-badge latency-badge">Latency</span>
+            <img src="static/images/latency.png" alt="Latency breakdown results" loading="lazy">
+          </figure>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <section id="bibtex" class="section soft">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">BibTeX</h2>
+      <pre><code>@inproceedings{huang2026singlegs,
+  title     = {SingleGS: Consumer-Grade Monocular 3D Telepresence with Real-Time 3D Gaussian Rendering},
+  author    = {Huang, Xuling and Lin, Tao and Zhao, Rui and Zhang, Yuan and Fang, Li and Yan, Jinyao},
+  booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},
+  year      = {2026},
+  doi       = {10.1145/3767308.3836177}
+}</code></pre>
+    </div>
+  </section>
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  <footer>
+    <p><strong>SingleGS</strong> · ACM Multimedia 2026</p>
+    <p class="mt-2">This page is adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>, based on Nerfies. Please retain the template attribution and its CC BY-SA 4.0 license notice when publishing.</p>
+    <p class="mt-2"><sup>*</sup> Corresponding author.</p>
+  </footer>
+</body>
+</html>
